@@ -4,11 +4,11 @@
   tasks:
     - name: Install nginx
       ansible.builtin.yum:
-        name: nginx
+        name: httpd
         state: latest
 
     - name: Start nginx
       ansible.builtin.systemd:
-        name: nginx
         state: started
+        name: nginx
         enable: yes
