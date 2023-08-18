@@ -5,7 +5,7 @@
     fruit: true
     vegetable: false
 
-    tasks:
+    task:
       - name: Print Fruit Name
         ansible.builtin.debug:
           msg: Fruit Name - Apple
